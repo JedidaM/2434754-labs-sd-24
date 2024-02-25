@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software Design Website</title>
     <style>
-        .container {
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -13,25 +20,38 @@
         .heading {
             font-size: 24px;
         }
-        .sections {
+        nav {
             display: flex;
         }
-        .section {
+        nav a {
+            color: #fff;
+            text-decoration: none;
             margin-left: 10px;
-            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #555;
+        }
+        nav a:hover {
+            background-color: #777;
+        }
+        main {
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1 class="heading">Welcome to Software Design Website</h1>
-        <div class="sections">
-            <div class="section"><a href="#about">About us</a></div>
-            <div class="section"><a href="#services">Services</a></div>
-            <div class="section"><a href="#contact">Contact us</a></div>
-        </div>
-    </div>
-    <!-- Content for About us, Services, and Contact us sections goes here -->
+        <nav>
+            <a href="about.html">About us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Content for the main section goes here -->
+    </main>
 </body>
 </html>
 
+    
