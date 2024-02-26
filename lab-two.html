@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,27 +39,23 @@
         main {
             padding: 20px;
         }
-        section {
-            margin-bottom: 20px;
-        }
         iframe {
             width: 100%;
             border: none;
         }
-        .image-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .image-container img {
+        img {
             max-width: 100%;
             height: auto;
             border-radius: 5px;
+            display: block;
+            margin: 0 auto;
         }
-        .footer {
+        footer {
             background-color: #333;
             color: #fff;
             padding: 10px;
             text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -72,33 +69,24 @@
         </nav>
     </header>
     <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <div class="image-container">
-                <img src="about_image.jpg" alt="About Us Image">
-            </div>
-            <iframe src="about.html" title="About Us"></iframe>
-        </section>
+        <h2 id="about">About Us</h2>
+        <p>This is where you can describe your company.</p>
+        <img src="about_image.jpg" alt="About Us Image">
+        <iframe src="about.html" title="About Us"></iframe>
         
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="image-container">
-                <img src="services_image.jpg" alt="Services Image">
-            </div>
-            <iframe src="services.html" title="Services"></iframe>
-        </section>
+        <h2 id="services">Our Services</h2>
+        <p>This is where you can describe your services.</p>
+        <img src="services_image.jpg" alt="Services Image">
+        <iframe src="services.html" title="Services"></iframe>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <div class="image-container">
-                <img src="contact_image.jpg" alt="Contact Us Image">
-            </div>
-            <iframe src="contact.html" title="Contact Us"></iframe>
-        </section>
+        <h2 id="contact">Contact Us</h2>
+        <p>This is where you can include your contact information.</p>
+        <img src="contact_image.jpg" alt="Contact Us Image">
+        <iframe src="contact.html" title="Contact Us"></iframe>
     </main>
-    <footer class="footer">
+    <footer>
         &copy; 2024 The Lucky Company. All rights reserved.
     </footer>
 </body>
-    </html>
-    
+</html>
+
