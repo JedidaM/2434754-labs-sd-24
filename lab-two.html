@@ -6,8 +6,9 @@
     <title>Software Design Website</title>
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         header {
             background-color: #333;
@@ -37,21 +38,67 @@
         main {
             padding: 20px;
         }
+        section {
+            margin-bottom: 20px;
+        }
+        iframe {
+            width: 100%;
+            border: none;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1 class="heading">Welcome to Software Design Website</h1>
         <nav>
-            <a href="about.html">About us</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact us</a>
+            <a href="#about">About us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact us</a>
         </nav>
     </header>
     <main>
-        <!-- Content for the main section goes here -->
-    </main>
-</body>
-</html>
+        <section id="about">
+            <h2>About Us</h2>
+            <div class="image-container">
+                <img src="about_image.jpg" alt="About Us Image">
+            </div>
+            <iframe src="about.html" title="About Us"></iframe>
+        </section>
+        
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="image-container">
+                <img src="services_image.jpg" alt="Services Image">
+            </div>
+            <iframe src="services.html" title="Services"></iframe>
+        </section>
 
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="image-container">
+                <img src="contact_image.jpg" alt="Contact Us Image">
+            </div>
+            <iframe src="contact.html" title="Contact Us"></iframe>
+        </section>
+    </main>
+    <footer class="footer">
+        &copy; 2024 The Lucky Company. All rights reserved.
+    </footer>
+</body>
+    </html>
     
