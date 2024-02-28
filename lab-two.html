@@ -3,28 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Welcome to Software Design Website</title>
+    <title>Welcome to Software Design Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            justify-content:center;
-            
-            
         }
         header {
             background-color: #333;
             color: #fff;
             padding: 10px;
-            
+            display: flex;
             justify-content: space-between;
             align-items: center;
-            
         }
         .heading {
             font-size: 24px;
-            align-items:center;
+            margin: 0; /* Remove default margin */
         }
         nav {
             display: flex;
@@ -42,29 +38,44 @@
         }
         main {
             padding: 20px;
-            text-align:center;
-            
-            
+            text-align: center;
         }
-        .all{
-         display:flex;
-         justify-content:center;
-        
+        section {
+            margin-bottom: 20px;
         }
-        iframe {
-            
-            border: none;
-            
-            
+        header > h1, nav a, main > section, footer {
+            display: block;
         }
-        img {
+        main > section {
+            margin-bottom: 20px;
+        }
+        .service-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            border: 2px solid #333; /* Add border to container */
+            border-radius: 10px;
+            padding: 10px; /* Add padding to the container */
+            box-sizing: border-box; /* Include padding in width */
+        }
+        .service {
+            flex: 0 0 45%; /* Adjust width as needed */
+            padding: 20px;
+        }
+        .service:nth-child(2) {
+            border-left: 2px solid #333; /* Add left border to second service */
+        }
+        .service h3 {
+            margin-top: 0;
+        }
+        .service p {
+            margin-bottom: 0;
+        }
+        .service img {
             max-width: 100%;
             height: auto;
-          
-            text-align:center;
-            
-            
-            margin: 20px auto;
+            margin-top: 10px;
         }
         footer {
             background-color: #333;
@@ -73,51 +84,40 @@
             text-align: center;
             margin-top: 20px;
         }
-        article{
-            border: 1px solid black;
-        }
-      
     </style>
 </head>
 <body>
-    
     <header>
+        <h1 class="heading">Welcome to Software Design Website</h1>
+        <nav>
+            <a href="#about">About us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact us</a>
         </nav>
-        
-   
-       
+    </header>
+    <main>
         <section id="about">
             <h2>About Us</h2>
             <p>We are a company dedicated to providing excellent service to our customers.</p>
-            <img src ="aboutus.jpg" height="400" width ="600" alt ="About Us Image" align-text= "center">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/007/932/706/small_2x/about-us-text-web-button-template-about-us-sign-icon-label-colorful-vector.jpg"  class="image" alt="About Us Image">
         </section>
 
-         </header>
-        <h2 text-align="center">Our Services</h2>
-        <p></p>
-        
-         
-         <section class ="all">
-             
-        <article class="wdt">
-              
-        <h2>Web Development </h2>
-        <p>We specialize in creating responsive and user friendly websites.</p>
-        <img src="webdev.jpg" height="400" width ="600" alt="Contact Us Image">
-       
-        
-        </article>
-        <article>
-          <h2>Graphic Design </h2>
-        <p> Our talented designers can bring your ideas to life with stunning visuals</p>
-        <img src="graphicdesign.jpg" height="400" width ="600" alt="Services Image">
-     
-                  
-       </article>
-            
+        <section id="services">
+            <h2>Our Services</h2>
+            <section class="service-container">
+                <section class="service">
+                    <h3>Web Development</h3>
+                    <p>We specialize in creating responsive and user-friendly websites.</p>
+                    <img src="https://i.pinimg.com/originals/fe/4f/9a/fe4f9abc2f575fe93fa531c1a024c2ae.jpg" class="image" width="300" alt="Web Development Image">
+                </section>
+                <section class="service">
+                    <h3>Graphic Design</h3>
+                    <p>Our talented designers can bring your ideas to life with stunning visuals.</p>
+                    <img src="https://github.com/JedidaM/2434754-labs-sd-24/blob/main/graphicdesign.jpg?raw=true" class="image" width="400" alt="Graphic Design Image">
+                </section>
+            </section>
         </section>
-        
-    
+    </main>
     <footer>
         &copy; 2024 The Lucky Company. All rights reserved.
     </footer>
